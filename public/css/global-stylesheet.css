@@ -1,0 +1,252 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #D9EAFD !important;
+  }
+/* General layout */
+.login-page {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Header text */
+.login-title {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1.75rem;      /* equals h3 on Bootstrap scale */
+}
+
+.login-subtitle {
+    color: #6c757d;
+}
+
+/* Labels */
+.login-label {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+/* Brand‑coloured button */
+.btn-brand {
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1.05rem;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: #2980b9 !important;
+    color: #ffffff;
+}
+
+/* Focus outlines (inputs & buttons) */
+.form-control:focus,
+.btn-brand:focus {
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+    border-color: #3498db;
+}
+
+/* Icons inside inputs */
+.input-icon {
+    color: #6c757d;
+}
+
+/* Validation / error helper text */
+.error-text {
+    font-size: 0.9rem;
+}
+
+/* Forgot‑password link + support link */
+.forgot-link,
+.support-link {
+    color: #3498db;
+}
+
+.forgot-link:hover,
+.support-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Help text paragraph */
+.help-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1.5rem !important;
+    }
+}
+/* home.css */
+
+/* Alerts */
+.home-alert { padding: 1rem; margin-bottom: 1rem; }
+.home-alert--success { background: #d1fae5; border-left: 4px solid #10b981; color: #047857; }
+
+/* Card */
+.home-card {
+    padding: 2.5rem; 
+    border-radius: .5rem;
+}
+
+/* Header */
+.home-header { display: flex; flex-direction: column; margin-bottom: 1.5rem; }
+@media(min-width: 768px){ .home-header { flex-direction: row; justify-content: space-between; align-items: center; } }
+.home-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; }
+@media(min-width: 768px){ .home-title { margin-bottom: 0; } }
+
+/* Filters */
+.home-filters { display: flex; flex-direction: column; width: 100%; }
+@media(min-width: 768px){ .home-filters { flex-direction: row; width: auto; } }
+.home-input-group { position: relative; margin-bottom: .5rem; }
+@media(min-width: 768px){ .home-input-group { margin-bottom: 0; margin-right: .5rem; } }
+
+/* Inputs & selects */
+.home-input { width: 100%; padding: .5rem 1rem; border: 1px solid #d1d5db; border-radius: .5rem; }
+.home-input:focus { outline: none; box-shadow: 0 0 0 .125rem rgba(59, 130, 246, .5); border-color: #3b82f6; }
+
+/* Full width util */
+.home-input--full { flex: 1; }
+
+/* Buttons */
+.home-btn { padding: .5rem 1rem; border-radius: .5rem; border: none; cursor: pointer; }
+.home-btn--primary { background: #3b82f6; color: #fff; }
+.home-btn--primary:hover { background: #2563eb; }
+.home-btn--secondary { background: #e5e7eb; color: #374151; }
+.home-btn--secondary:hover { background: #d1d5db; }
+
+/* Modal */
+.home-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* dim background if you like */
+    background: rgba(0, 0, 0, 0.5);
+    /* center the modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* allow the overlay itself to scroll if modal is too tall */
+    padding: 1rem;            /* so modal never butt‑up to edges */
+    overflow-y: auto;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+  .home-modal {
+    background: #fff;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 600px;       /* or whatever width you prefer */
+    max-height: 90vh;       /* never exceed 90% of viewport height */
+    overflow-y: auto;       /* scroll inside the modal if content is tall */
+    overflow-x: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 1.5rem;
+  }
+/* Modal title */
+.home-modal-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; }
+.home-modal::-webkit-scrollbar {
+    width: 8px;
+}
+.home-modal::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+.home-modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+/* Form groups */
+.home-form-group { margin-bottom: 1rem; }
+.home-label { display: block; color: #374151; margin-bottom: .5rem; }
+.home-required { color: #ef4444; }
+
+/* Error text */
+.home-error { display: block; margin-top: .25rem; color: #dc2626; font-size: .875rem; }
+
+/* Form actions */
+.home-form-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+.home-btn--sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Table */
+.home-table-wrapper { 
+    overflow-x: auto; 
+    margin: 1rem 0;
+    border: 2px solid #90b8e6;
+    box-shadow: #333;
+}
+.home-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+.home-table th {
+    padding: 0.75rem 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+.home-table th,
+.home-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+.home-table tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+.home-table tr:hover td {
+    background-color: #f1f1f1;
+}
+.home-table thead { background: #f3f4f6; color: #374151; }
+.home-table tbody tr:hover { background: #f9fafb; }
+
+/* No records row */
+.home-no-records { text-align: center; color: #6b7280; }
+
+/* Pagination wrapper */
+.home-pagination { 
+    margin-top: 1rem; 
+}
+.home-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .home-navbar__brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .home-navbar__logout {
+    font-size: 0.875rem;
+    padding: 0.3rem 0.6rem;
+    background: #e3342f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .home-navbar__logout:hover {
+    background: #cc1f1a;
+  }
+  
